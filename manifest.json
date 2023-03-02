@@ -1,0 +1,29 @@
+{
+   "background": {
+      "scripts": [ "main.js" ]
+   },
+   "description": "Opens your Google search in a new Bing tab
+                  to get Bing Rewards search credit.",
+   "manifest_version": 2,
+   "name": "Bingle_Rewards",
+   "permissions": [ "webRequest",
+       "webRequestBlocking",
+       "http://*.google.com/*",
+       "https://*.google.com/*",
+        "*://www.google.com/",
+        "https://www.bing.com/searchdomaincheck?format=domain&type=chrome",
+        "tabs",
+        "sessions",
+        "storage"],
+   "version": "1.0",
+   "commands": {
+       "recently_closed_tab": {
+           "suggested_key": {
+               "default": "Ctrl+Shift+T",
+               "mac": "Command+Shift+T"
+           },
+           "description": "Open Recently Closed Tab (excludes Bing
+                        searches)"
+       }
+   }
+}
